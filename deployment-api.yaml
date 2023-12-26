@@ -14,7 +14,7 @@ spec:
         app: organization-api
     spec:
       containers:
-      - image: 751111534101.dkr.ecr.us-west-2.amazonaws.com/dotnetdynamodbwithsqs-api:latest-528f75112f0179039e3df68e1bda497106ff3f09
+      - image: 751111534101.dkr.ecr.us-west-2.amazonaws.com/dotnetdynamodbwithsqs-api:latest-e079bbeeedb66c50d917884a1e7f11c802ad3432
         name: organization-api
         env:
           - name: Application__ConnectionString
