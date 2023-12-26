@@ -60,7 +60,7 @@ jobs:
       run: aws eks update-kubeconfig --name demo-eks    
     - name: Deploy to EKS
       run: |
-        kubectl apply -f deployment-api.yaml -n dotnetdynamodbwithsqs
-        kubectl apply -f service-api.yaml -n dotnetdynamodbwithsqs
-        kubectl apply -f deployment-worker.yaml -n dotnetdynamodbwithsqs
-        kubectl apply -f service-worker.yaml -n dotnetdynamodbwithsqs
+        kubectl apply -f deployment-api.yaml -n dotnetdynamodbsqs
+        kubectl apply -f service-api.yaml -n dotnetdynamodbsqs
+        kubectl apply -f deployment-worker.yaml -n dotnetdynamodbsqs
+        kubectl apply -f service-worker.yaml -n dotnetdynamodbsqs
