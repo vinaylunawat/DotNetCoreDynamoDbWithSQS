@@ -6,7 +6,7 @@ spec:
   selector:
     app: organization-api-nonsql
   type: LoadBalancer
-  ports:	
+  ports:
   - protocol: TCP
     port: 80
     targetPort: 80
