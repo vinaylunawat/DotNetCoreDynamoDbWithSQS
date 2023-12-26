@@ -14,7 +14,7 @@ spec:
         app: organization-worker-nonsql
     spec:
       containers:
-      - image: 751111534101.dkr.ecr.us-west-2.amazonaws.com/dotnetdynamodbwithsqs-worker:latest-4d9839b084fb8a3bfa5874043080c82583272b0b
+      - image: 751111534101.dkr.ecr.us-west-2.amazonaws.com/dotnetdynamodbwithsqs-worker:latest-701dcd3c0c032783aa3f60e8103302e8c19dc537
         name: organization-worker-nonsql
         env:
           - name: Application__ConnectionString
