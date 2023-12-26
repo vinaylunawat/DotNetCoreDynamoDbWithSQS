@@ -32,7 +32,8 @@ jobs:
         REPOSITORY_API: dotnetdynamodbwithsqs-api
         REPOSITORY_Worker: dotnetdynamodbwithsqs-worker
         IMAGE_TAG: 1.8
-      run: |        
+      run: |    
+        ls
         docker build -t ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/dotnetdynamodbwithsqs-api:latest-${{ github.sha }} -f Dockerfile_Api .
         docker build -t ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/dotnetdynamodbwithsqs-worker:latest-${{ github.sha }} -f Dockerfile_Worker .        
 
