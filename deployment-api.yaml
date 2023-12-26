@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: organization-api
+  name: organization-api-nonsql
 spec:
   replicas: 2
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: organization-api
+      app: organization-api-nonsql
   template:
     metadata:
       labels:
-        app: organization-api
+        app: organization-api-nonsql
     spec:
       containers:
       - image: 751111534101.dkr.ecr.us-west-2.amazonaws.com/dotnetdynamodbwithsqs-api:latest-fed89671e3d878688c232f735272cdd20568abe1
-        name: organization-api
+        name: organization-api-nonsql
         env:
           - name: Application__ConnectionString
             valueFrom:
