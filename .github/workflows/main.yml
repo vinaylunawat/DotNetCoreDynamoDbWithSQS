@@ -57,10 +57,10 @@ jobs:
         git commit -m "Update to new version"
         git push
     - name: Update kube config
-      run: aws eks update-kubeconfig --name demo-eks    
+      run: aws eks update-kubeconfig --name demo-eks
     - name: Deploy to EKS
       run: |
-        kubectl apply -f deployment-api.yaml -n test
-        kubectl apply -f service-api.yaml -n test
-        kubectl apply -f deployment-worker.yaml -n test
-        kubectl apply -f service-worker.yaml -n test
+        kubectl apply -f deployment-api.yaml -n test1
+        kubectl apply -f service-api.yaml -n test1
+        kubectl apply -f deployment-worker.yaml -n test1
+        kubectl apply -f service-worker.yaml -n test1
