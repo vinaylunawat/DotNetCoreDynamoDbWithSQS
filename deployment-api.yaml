@@ -14,7 +14,7 @@ spec:
         app: organization-api-nosql
     spec:
       containers:
-      - image: 751111534101.dkr.ecr.ap-southeast-1.amazonaws.com/dotnetnosql-api:latest-1.0
+      - image: 751111534101.dkr.ecr.ap-southeast-1.amazonaws.com/dotnetnosql-api:latest-4d30d1269aac6cc6f1c33f53f343802174649175
         name: organization-api-nosql
         env:
           - name: Application__ConnectionString
