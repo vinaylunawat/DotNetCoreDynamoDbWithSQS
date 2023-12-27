@@ -14,7 +14,7 @@ spec:
         app: organization-worker-nosql
     spec:
       containers:
-      - image: 751111534101.dkr.ecr.ap-southeast-1.amazonaws.com/dotnetnosql-worker:latest-53c24593680b47400911f8228fac0b8800231fbd
+      - image: 751111534101.dkr.ecr.ap-southeast-1.amazonaws.com/dotnetnosql-worker:latest-a502544f5e875d30bf520f2eabfd229bd582dcea
         name: organization-worker-nosql
         env:
           - name: Application__ConnectionString
