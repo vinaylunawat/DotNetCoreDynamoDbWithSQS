@@ -1,1 +1,2 @@
 # DotNetCoreDynamoDbWithSQS  
+Added Manifests
